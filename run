@@ -1,1 +1,6 @@
-mpirun -np $1 ./resistance
+if [ $# -eq 0 ]
+  then
+    echo "USAGE: ./run numberOfThreads"
+else
+  mpirun -np $1 ./resistance
+fi
