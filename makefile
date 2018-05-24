@@ -1,2 +1,1 @@
-main: main.cpp
-	mpicc -pthread main.cpp -o resistance
+mpiCC -pthread main.cpp Resource.cpp Meeting.cpp -o resistance
