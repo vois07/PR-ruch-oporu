@@ -1,16 +1,148 @@
-Process 15: parent=7 lCh=-1 rCh=-1 lN=-1 rN=-1
-Process 1: parent=0 lCh=3 rCh=4 lN=-1 rN=2
-Process 3: parent=1 lCh=7 rCh=8 lN=-1 rN=4
+Process 2: parent=0 lCh=-1 rCh=-1 lN=1 rN=-1
+Process 3: parent=1 lCh=-1 rCh=-1 lN=-1 rN=-1
+Process 3: rand=35, barrier=103
+Process 2: rand=50, barrier=102
+Process 3: I don't want to meet. :(
+Process 2: I don't want to meet. :(
+Process 3: rand=16, barrier=102
+Process 2: rand=26, barrier=101
+Process 3: I don't want to meet. :(
+Process 2: I don't want to meet. :(
+Process 3: rand=57, barrier=101
+Process 2: rand=21, barrier=100
+Process 3: I don't want to meet. :(
+Process 2: I don't want to meet. :(
+Process 3: rand=11, barrier=100
+Process 2: rand=94, barrier=99
+Process 2: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 3: rand=8, barrier=99
+Process 2: rand=93, barrier=98
+Process 2: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 3: rand=3, barrier=98
+Process 2: rand=88, barrier=97
+Process 3: I don't want to meet. :(
+Process 2: I don't want to meet. :(
+Process 3: rand=37, barrier=97
+Process 2: rand=52, barrier=96
+Process 3: I don't want to meet. :(
+Process 2: I don't want to meet. :(
+Process 3: rand=31, barrier=96
+Process 2: rand=5, barrier=95
+Process 3: I don't want to meet. :(
+Process 2: I don't want to meet. :(
+Process 3: rand=55, barrier=95
+Process 2: rand=4, barrier=94
+Process 3: I don't want to meet. :(
+Process 2: I don't want to meet. :(
+Process 3: rand=90, barrier=94
+Process 2: rand=45, barrier=93
+Process 3: I don't want to meet. :(
 Process 0: parent=-1 lCh=1 rCh=2 lN=-1 rN=-1
-Process 10: parent=4 lCh=-1 rCh=-1 lN=9 rN=11
-Process 7: parent=3 lCh=15 rCh=-1 lN=-1 rN=8
-Process 6: parent=2 lCh=13 rCh=14 lN=5 rN=-1
-Process 8: parent=3 lCh=-1 rCh=-1 lN=7 rN=9
-Process 5: parent=2 lCh=11 rCh=12 lN=4 rN=6
-Process 2: parent=0 lCh=5 rCh=6 lN=1 rN=-1
-Process 14: parent=6 lCh=-1 rCh=-1 lN=13 rN=-1
-Process 13: parent=6 lCh=-1 rCh=-1 lN=12 rN=14
-Process 4: parent=1 lCh=9 rCh=10 lN=3 rN=5
-Process 12: parent=5 lCh=-1 rCh=-1 lN=11 rN=13
-Process 9: parent=4 lCh=-1 rCh=-1 lN=8 rN=10
-Process 11: parent=5 lCh=-1 rCh=-1 lN=10 rN=12
+Process 2: I don't want to meet. :(
+Process 3: rand=71, barrier=93
+Process 1: parent=0 lCh=3 rCh=-1 lN=-1 rN=2
+Process 3: I don't want to meet. :(
+Process 2: rand=22, barrier=92
+Process 0: rand=64, barrier=100
+Process 3: rand=42, barrier=92
+Process 2: I don't want to meet. :(
+Process 1: rand=38, barrier=101
+Process 0: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 2: rand=96, barrier=91
+Process 0: rand=84, barrier=99
+Process 3: rand=83, barrier=91
+Process 1: rand=99, barrier=100
+Process 2: I do want to meet. :)
+Process 0: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=81, barrier=98
+Process 3: rand=83, barrier=90
+Process 1: rand=71, barrier=99
+Process 0: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=58, barrier=97
+Process 3: rand=47, barrier=89
+Process 1: rand=63, barrier=98
+Process 0: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=27, barrier=96
+Process 3: rand=25, barrier=88
+Process 1: rand=73, barrier=97
+Process 0: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=56, barrier=95
+Process 3: rand=11, barrier=87
+Process 1: rand=7, barrier=96
+Process 0: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=16, barrier=94
+Process 3: rand=71, barrier=86
+Process 0: I don't want to meet. :(
+Process 1: rand=45, barrier=95
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=31, barrier=93
+Process 3: rand=52, barrier=85
+Process 0: I don't want to meet. :(
+Process 1: rand=59, barrier=94
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=0, barrier=92
+Process 3: rand=2, barrier=84
+Process 0: I don't want to meet. :(
+Process 1: rand=34, barrier=93
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=29, barrier=91
+Process 3: rand=12, barrier=83
+Process 0: I don't want to meet. :(
+Process 1: rand=48, barrier=92
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=22, barrier=90
+Process 3: rand=28, barrier=82
+Process 0: I don't want to meet. :(
+Process 1: rand=74, barrier=91
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=14, barrier=89
+Process 3: rand=1, barrier=81
+Process 0: I don't want to meet. :(
+Process 1: rand=11, barrier=90
+Process 3: I don't want to meet. :(
+Process 1: I don't want to meet. :(
+Process 0: rand=52, barrier=88
+Process 3: rand=30, barrier=80
+Process 0: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 1: rand=10, barrier=89
+Process 0: rand=58, barrier=87
+Process 1: I don't want to meet. :(
+Process 3: rand=60, barrier=79
+Process 0: I don't want to meet. :(
+Process 1: rand=100, barrier=88
+Process 3: I don't want to meet. :(
+Process 1: I do want to meet. :)
+Process 0: rand=19, barrier=86
+Process 3: rand=3, barrier=78
+Process 0: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 0: rand=73, barrier=85
+Process 3: rand=76, barrier=77
+Process 0: I don't want to meet. :(
+Process 3: I don't want to meet. :(
+Process 0: rand=82, barrier=84
+Process 3: rand=80, barrier=76
+Process 0: I don't want to meet. :(
+Process 3: I do want to meet. :)
+Process 0: rand=98, barrier=83
+Process 0: I do want to meet. :)
