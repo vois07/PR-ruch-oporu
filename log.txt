@@ -1,0 +1,16 @@
+Process 15: parent=7 lCh=-1 rCh=-1 lN=-1 rN=-1
+Process 1: parent=0 lCh=3 rCh=4 lN=-1 rN=2
+Process 3: parent=1 lCh=7 rCh=8 lN=-1 rN=4
+Process 0: parent=-1 lCh=1 rCh=2 lN=-1 rN=-1
+Process 10: parent=4 lCh=-1 rCh=-1 lN=9 rN=11
+Process 7: parent=3 lCh=15 rCh=-1 lN=-1 rN=8
+Process 6: parent=2 lCh=13 rCh=14 lN=5 rN=-1
+Process 8: parent=3 lCh=-1 rCh=-1 lN=7 rN=9
+Process 5: parent=2 lCh=11 rCh=12 lN=4 rN=6
+Process 2: parent=0 lCh=5 rCh=6 lN=1 rN=-1
+Process 14: parent=6 lCh=-1 rCh=-1 lN=13 rN=-1
+Process 13: parent=6 lCh=-1 rCh=-1 lN=12 rN=14
+Process 4: parent=1 lCh=9 rCh=10 lN=3 rN=5
+Process 12: parent=5 lCh=-1 rCh=-1 lN=11 rN=13
+Process 9: parent=4 lCh=-1 rCh=-1 lN=8 rN=10
+Process 11: parent=5 lCh=-1 rCh=-1 lN=10 rN=12
