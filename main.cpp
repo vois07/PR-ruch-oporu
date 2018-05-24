@@ -1,14 +1,9 @@
-#include <iostream>
-#include <chrono>
-#include <thread>
-#include <vector>
-#include <cstdlib>
-#include <ctime>
 #include <mpi.h>
+#include <stdio.h>
+#include <vector>
+#include <cmath>
 
 using namespace std;
-p
-//TODO: tagi wiadomości
 
 class Conspirator {
     public:
@@ -17,20 +12,22 @@ class Conspirator {
         bool wantsToMeet;
 
         int parentId;
+        int id;
         int leftNeighbourId;
         int rightNeighbourId;
         int leftChildId;
         int rightChildId;
 
-        vector<int> team; //ludzie do spotkania
-        bool isDvdTaken; //klasa?
+        vector<int> team;
+        bool isDvdTaken;
 
-        Conspirator(typ zmienne_konfiguracyjne, int myId) {
-            if (jest_na_liście_akceptorów) {
-                this->isAcceptor = true;
-            } else {
-                this->isAcceptor = false;
-            }
+        Conspirator(int myId, int processAmount);
+};
+
+Conspirator::Conspirator(int myId, int processAmount){
+
+            this->id = myId;
+            this->isAcceptor = false;
 
             this->isMeetingLeader = false;
             this->wantsToMeet = false;
@@ -44,20 +41,30 @@ class Conspirator {
                 }
             }
 
-            /*
-                Znajdowanie sąsiadów:
-                1. Znalezienie "poziomu" (lewy koniec to suma kolejnych potęg 2 od 0 do i, prawy to suma kolejnych potęg 2 od 0 do i+1)
-                2. Jeżeli myId = lewy koniec
-                    2.1 leftNeighbour = -1
-                    2.2 rightNeighbour = myId+1
-                3. Jeżeli myId = prawy koniec
-                    3.1 rightNeighbour = -1
-                    3.2 leftNeighbour = myId-1
-            */
+            int i=0, le=0, re;
+            while(le + pow(2,i) <= myId) {
+                le+=pow(2,i);
+                i++;
+            }
+            re = le+pow(2, i)-1;
 
-            this->leftChildId = -1;
-            this->rightChildId = -1;
+            this->leftNeighbourId=myId-1;
+            this->rightNeighbourId=myId+1;
+            if(myId == le) {
+                this->leftNeighbourId=-1;
+            }
+            if(myId == re) {
+                this->rightNeighbourId=-1;
+            }
 
+            if(this->rightNeighbourId>=processAmount){
+                this->rightNeighbourId=-1;
+                if(this->leftNeighbourId>=processAmount){
+                    this->leftNeighbourId=-1;
+                }
+            }
+
+            this->leftChildId = this->rightChildId = -1;
             if (2*myId + 1 < processAmount) {
                 this->leftChildId = 2*myId + 1;
             }
@@ -67,97 +74,22 @@ class Conspirator {
             }
 
             this->isDvdTaken = false;
-        }
 
-        int askNeerestAcceptator() {
-            /*  
-            znajdowanie najbliższego akceptora
-            w górę drzewa
-            MPI_SEND do parentID 
-            */
-           return acceptorId;
-        }
-
-        void findTeam(int myId) {
-            /*
-            Maksymalnie zawsze mamy w sumie 5 konspiratorów do spotkania.
-            Każdy wysyła do każdego info o chęci spotkania.
-            Każdy zapisuje sobie id chętnego.
-            Minie określony czas na zgłaszanie chętnych.
-            Po nim sprawdzamy, czy mamy przynajmniej 2 chętnych.
-            Jeśli nie, sleep.
-            Jeśli tak,
-                rozwiązujemy problem wyboru lidera (walczącego o zasób)
-                analogicznie do problemu generałów.
-                Każdy proces ma skojarzonych chętnych do spotkania i tworzy dla nich tablicę (tab.size == liczba chętnych).
-                Każdy proces losuje sobie liczbę, przypisuje swojej komórce tabeli i rozgłasza do pozostałych.
-                Liderem jest ten, który ma największą wartość w tablicy (jak remis, to pierwszy z lewej).
-            */
-        }
-
-        void waitToNextMeeting() {
-            srand(time(null));
-            int time = rand() % 10 + 1;
-            this_thread::sleep_for(chrono::seconds(time));
-            this->wantsToMeet = bool;
-        }
-
-        void meeting() {
-            cout<<"meeting"<<endl;
-        }
-
-        bool acceptorFunAccept() {
-            //tutaj komunikacja z innymi akceptorami 
-            return true;
-        }
-};
+}
 
 
-int main(int argc, char **argv) {
+int main (int argc, char* argv[])
+{
+  int rank, size;
 
-    /*
-    wczytanie pliku ze zmiennymi konfiguracyjnymi
-    dane wejściowe: liczba procesów, id akceptorów, czas spotkania
-    */
+  MPI_Init (&argc, &argv);      /* starts MPI */
+  MPI_Comm_rank (MPI_COMM_WORLD, &rank);        /* get current process id */
+  MPI_Comm_size (MPI_COMM_WORLD, &size);        /* get number of processes */
+  //printf( "Hello world from process %d of %d\n", rank, size );
 
-    int size, rank;
-    MPI_Status status;
-    MPI_Init(&argc, &argv);  
+  Conspirator c(rank, size);
+  printf("Process %d: parent=%d lCh=%d rCh=%d lN=%d rN=%d\n", c.id, c.parentId, c.leftChildId, c.rightChildId, c.leftNeighbourId, c.rightNeighbourId);
 
-    MPI_Comm_size(MPI_COMM_WORLD, &size);
-    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-
-    Conspirator conspirator = new Conspirator(dane_konfiguracyjne, rank);
-
-    if (conspirator.isAcceptor) {
-        while(true){
-            /*
-            akceptor odbiera prośbę o spotkanie
-            odsyła wynik funkcji acceptorFunAccept
-            */
-            MPI_Recv();
-            MPI_Send();
-        }
-
-    } else {
-        while(true) {
-            conspirator.waitToNextMeeting();
-            int accId = conspirator.askNeerestAcceptator();
-            MPI_Send();
-            MPI_Recv();
-
-            conspirator.findTeam(rank);
-            if (conspirator.isMeetingLeader) {
-                // walka o zasób, Lamport
-                MPI_Send();
-            } else {
-                MPI_Recv();
-            }
-
-            conspirator.meeting();
-        }
-
-    }
-
-    return 0;
+  MPI_Finalize();
+  return 0;
 }
