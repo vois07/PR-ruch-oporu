@@ -8,8 +8,11 @@
 #include <ctime>
 #include "Conspirator.cpp"
 #include "Functions.cpp"
+#include "utils.h"
 
 using namespace std;
+
+
 
 int main (int argc, char* argv[])
 {
