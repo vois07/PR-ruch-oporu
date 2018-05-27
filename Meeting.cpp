@@ -11,3 +11,8 @@ Meeting::Meeting(int id)
 	this -> Participants = queue<int>();
 	this -> RSVPs = queue<int>();
 }
+
+int Meeting::getID()
+{
+	return this -> id;
+}
