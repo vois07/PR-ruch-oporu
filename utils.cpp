@@ -9,4 +9,10 @@ namespace utils
 		string ans = std::to_string(leader) + std::to_string(rand())%(INT_MAX/1000);
 		return std::stoi(ans);
 	}
+	
+	struct Update
+	{
+		int meetingID;
+		int newParticipant;
+	};
 }
