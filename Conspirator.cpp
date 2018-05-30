@@ -57,3 +57,70 @@ Conspirator::Conspirator(int myId, int processAmount){
             this->isDvdTaken = false;
 
 }
+
+//conspirator
+void Conspirator::wait(int){
+            
+}
+int Conspirator::haveIBeenInvited(){
+            //MPI_RECV
+            return 0;
+}
+void Conspirator::answerInvite(){
+            //MPI_SEND
+}
+void Conspirator::joinMeeting(){
+            //MPI_SEND
+            //MPI_RECV?
+}
+int Conspirator::getUpdate(){
+            //MPI_RECV
+            return 0;
+}
+void Conspirator::leaveMeeting(){
+            //MPI_RECV
+            //change return type to bool l8r
+}
+
+//acceptor
+void Conspirator::checkPermission(){
+            //MPI_RECV
+}
+void Conspirator::grantPermission(){
+            //MPI_SEND
+}
+
+//leader
+void Conspirator::invite(int){
+            //MPI_SEND
+}
+void Conspirator::askPermission(){
+            //MPI_SEND
+}
+void Conspirator::getPermission(){
+            //MPI_RECV
+            //change return type to bool l8r
+}
+void Conspirator::askDVD(){
+            //MPI_SEND
+            
+}
+Resource Conspirator::getDVD(){
+            //MPI_RECV
+            return null;
+}
+void Conspirator::updatePatricipants(int){
+            //foreach: MPI_SEND
+}
+void Conspirator::startMeeting(){
+            //foreach: MPI_SEND
+}
+void Conspirator::endMeeting(){
+            //foreach: MPI_SEND
+}
+
+//resource owner
+void Conspirator::answerDVD(){
+            //MPI_RECV
+            //MPI_SEND
+}
