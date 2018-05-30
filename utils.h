@@ -7,4 +7,5 @@ namespace utils
 
 	enum CHANS{ acceptorCh};
 	int getMeetingChannel(int);
+	void makeMPI_UPDATE();
 };
