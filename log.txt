@@ -1,148 +1,53 @@
-Process 2: parent=0 lCh=-1 rCh=-1 lN=1 rN=-1
-Process 3: parent=1 lCh=-1 rCh=-1 lN=-1 rN=-1
-Process 3: rand=35, barrier=103
-Process 2: rand=50, barrier=102
-Process 3: I don't want to meet. :(
-Process 2: I don't want to meet. :(
-Process 3: rand=16, barrier=102
-Process 2: rand=26, barrier=101
-Process 3: I don't want to meet. :(
-Process 2: I don't want to meet. :(
-Process 3: rand=57, barrier=101
-Process 2: rand=21, barrier=100
-Process 3: I don't want to meet. :(
-Process 2: I don't want to meet. :(
-Process 3: rand=11, barrier=100
-Process 2: rand=94, barrier=99
-Process 2: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 3: rand=8, barrier=99
-Process 2: rand=93, barrier=98
-Process 2: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 3: rand=3, barrier=98
-Process 2: rand=88, barrier=97
-Process 3: I don't want to meet. :(
-Process 2: I don't want to meet. :(
-Process 3: rand=37, barrier=97
-Process 2: rand=52, barrier=96
-Process 3: I don't want to meet. :(
-Process 2: I don't want to meet. :(
-Process 3: rand=31, barrier=96
-Process 2: rand=5, barrier=95
-Process 3: I don't want to meet. :(
-Process 2: I don't want to meet. :(
-Process 3: rand=55, barrier=95
-Process 2: rand=4, barrier=94
-Process 3: I don't want to meet. :(
-Process 2: I don't want to meet. :(
-Process 3: rand=90, barrier=94
-Process 2: rand=45, barrier=93
-Process 3: I don't want to meet. :(
-Process 0: parent=-1 lCh=1 rCh=2 lN=-1 rN=-1
-Process 2: I don't want to meet. :(
-Process 3: rand=71, barrier=93
-Process 1: parent=0 lCh=3 rCh=-1 lN=-1 rN=2
-Process 3: I don't want to meet. :(
-Process 2: rand=22, barrier=92
-Process 0: rand=64, barrier=100
-Process 3: rand=42, barrier=92
-Process 2: I don't want to meet. :(
-Process 1: rand=38, barrier=101
-Process 0: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 2: rand=96, barrier=91
-Process 0: rand=84, barrier=99
-Process 3: rand=83, barrier=91
-Process 1: rand=99, barrier=100
-Process 2: I do want to meet. :)
-Process 0: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=81, barrier=98
-Process 3: rand=83, barrier=90
-Process 1: rand=71, barrier=99
-Process 0: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=58, barrier=97
-Process 3: rand=47, barrier=89
-Process 1: rand=63, barrier=98
-Process 0: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=27, barrier=96
-Process 3: rand=25, barrier=88
-Process 1: rand=73, barrier=97
-Process 0: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=56, barrier=95
-Process 3: rand=11, barrier=87
-Process 1: rand=7, barrier=96
-Process 0: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=16, barrier=94
-Process 3: rand=71, barrier=86
-Process 0: I don't want to meet. :(
-Process 1: rand=45, barrier=95
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=31, barrier=93
-Process 3: rand=52, barrier=85
-Process 0: I don't want to meet. :(
-Process 1: rand=59, barrier=94
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=0, barrier=92
-Process 3: rand=2, barrier=84
-Process 0: I don't want to meet. :(
-Process 1: rand=34, barrier=93
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=29, barrier=91
-Process 3: rand=12, barrier=83
-Process 0: I don't want to meet. :(
-Process 1: rand=48, barrier=92
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=22, barrier=90
-Process 3: rand=28, barrier=82
-Process 0: I don't want to meet. :(
-Process 1: rand=74, barrier=91
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=14, barrier=89
-Process 3: rand=1, barrier=81
-Process 0: I don't want to meet. :(
-Process 1: rand=11, barrier=90
-Process 3: I don't want to meet. :(
-Process 1: I don't want to meet. :(
-Process 0: rand=52, barrier=88
-Process 3: rand=30, barrier=80
-Process 0: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 1: rand=10, barrier=89
-Process 0: rand=58, barrier=87
-Process 1: I don't want to meet. :(
-Process 3: rand=60, barrier=79
-Process 0: I don't want to meet. :(
-Process 1: rand=100, barrier=88
-Process 3: I don't want to meet. :(
-Process 1: I do want to meet. :)
-Process 0: rand=19, barrier=86
-Process 3: rand=3, barrier=78
-Process 0: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 0: rand=73, barrier=85
-Process 3: rand=76, barrier=77
-Process 0: I don't want to meet. :(
-Process 3: I don't want to meet. :(
-Process 0: rand=82, barrier=84
-Process 3: rand=80, barrier=76
-Process 0: I don't want to meet. :(
-Process 3: I do want to meet. :)
-Process 0: rand=98, barrier=83
-Process 0: I do want to meet. :)
+id = 3, parent = 1, siblings = {4}, children = none
+id = 0, parent = -1, siblings = none, children = {1, 2}
+id = 4, parent = 1, siblings = {3}, children = none
+id = 2, parent = 0, siblings = {1}, children = none
+id = 1, parent = 0, siblings = {2}, children = {3, 4}
+[0] Konspirator[2] posiada zasob
+[3] Konspirator[2] przesyla zasob Konspiratorowi[0]
+[5] Konspirator[0] otrzymal zasob od Konspiratora[2]
+[5] Konspirator[4] zaprasza Konspiratora[3] na spotkanie
+[6] Konspirator[4] oczekuje na jeszcze 1 potwierdzen
+[4] Konspirator[3] zaprasza Konspiratora[4] na spotkanie
+[5] Konspirator[3] oczekuje na jeszcze 1 potwierdzen
+[7] Konspirator[3] otrzymal potwierdzenie od Konspiratora[4]
+[7] Konspirator[3] otrzymal wszystkie potwierdzenia
+[7] Konspirator[3] jest organizatorem
+[7] Konspirator[3] oczekuje na zgode
+[9] Konspirator[3] otrzymuje zapytanie od Konspiratora[3] i przekazuje Konspiratorowi[1]
+[11] Konspirator[1] otrzymuje zapytanie od Konspiratora[3] i przekazuje Konspiratorowi[0]
+[13] Akceptor[0] otrzymuje zapytanie od Konspiratora[1]
+[15] Konspirator[1] otrzymal zgode Akceptora[0]
+[15] Konspirator[1] zaprasza Konspiratora[2] na spotkanie
+[15] Konspirator[1] oczekuje na jeszcze 1 potwierdzen
+[7] Konspirator[4] otrzymal potwierdzenie od Konspiratora[3]
+[7] Konspirator[4] otrzymal wszystkie potwierdzenia
+[7] Konspirator[4] czeka na poczatek spotkania
+[4] Konspirator[2] zaprasza Konspiratora[1] na spotkanie
+[4] Konspirator[2] oczekuje na jeszcze 1 potwierdzen
+[17] Konspirator[2] otrzymal potwierdzenie od Konspiratora[1]
+[18] Konspirator[2] otrzymal wszystkie potwierdzenia
+[19] Konspirator[1] otrzymal potwierdzenie od Konspiratora[2]
+[19] Konspirator[1] otrzymal wszystkie potwierdzenia
+[19] Konspirator[1] jest organizatorem
+[18] Konspirator[2] czeka na poczatek spotkania
+[19] Konspirator[1] przekazuje zgode Konspiratorowi[3]
+[19] Konspirator[1] oczekuje na zgode
+[22] Konspirator[1] otrzymuje zapytanie od Konspiratora[1] i przekazuje Konspiratorowi[0]
+[24] Akceptor[0] otrzymuje zapytanie od Konspiratora[1]
+[26] Konspirator[1] otrzymal zgode Akceptora[0]
+[22] Konspirator[3] otrzymal zgode Akceptora[1]
+[25] Spotkanie nr 1 zakonczone!
+[26] Konspirator[1] otrzymal zgode
+[RESOURCE_REQUEST][26] process[1] ask process[0] for resource
+[22] Konspirator[3] otrzymal zgode
+[RESOURCE_REQUEST][22] process[3] ask process[1] for resource
+[28] Konspirator[1] otrzymal zadanie zasobu do Konspiratora[3]
+[28] Konspirator[1] umiescil zadanie Konspiratora[3] w kolejce
+[28] Konspirator[0] otrzymal zadanie zasobu do Konspiratora[1]
+[28] Konspirator[0] zdaje zasob na rzecz Konspiratora[1]
+[30] Konspirator[1] w posiadaniu zasobu
+[30] Konspirator[1] otrzymal zasob
+[30] Konspirator[1] informuje o starcie spotkania Konspiratora[2]
+[32] Konspirator[2] rozpoczyna spotkanie u Konspiratora[1]
+[29] Spotkanie nr 2 zakonczone!

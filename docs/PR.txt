@@ -1,0 +1,59 @@
+﻿
+NA STARTCIE:
+	jesli posiadasz/otrzymales token zasobu a nie jestes rootem to przeslij go w gore
+	jako kierunek do zasobu oznacz rodzica
+
+ORGANIZACJA SPOTKAN:
+	1a zapytaj wszystkich na swoim poziomie czy chca wziac udzial w spotkaniu
+	1b nasluchuj czy ktos nie pyta cie czy chcesz wziac udzial w spotkaniu i odpowiadaj TAK
+	2 odbierz od wszystkich na swoim poziomie informacje czy chca wziac udzial w spotkaniu
+	3 po otrzymaniu wszystkich potwierdzen udzialu ustalany jest organizator - najmniejszy id procesu
+
+	JESLI jestes organizatorem:
+		4 popros o zgode akceptora 
+		5 odbierasz zgode od akceptora
+		6 sprawdź czy masz przynajmniej jeden zasób potrzebny do spotkania
+		7 JEŚLI masz zasob to zablokuj go i przejdź do 9 JEŚLI nie masz dodaj sie do swojej kolejki(FIFO) do zasobu oraz wyslij prosbe w kierunku zasobu 
+		8 odbierz wiadomosc z zasobem (ktos w koncu odesle zasob)(zasob przekazywany jest algorytmem Raymonda)
+		9 rozeslij pozostalym uczesnikom wiadomosc o starcie spotkania
+		10 pal kuce
+		11 
+		12 rozeslij pozostalym uczesnikom wiadomosc o koncu spotkania
+		13 odczekaj przed kolejnym spotkaniem
+		
+	JESLI nie jestes organizatorem:
+		4 to czekasz na wiadomosc o starcie spotkania
+		5a palisz kuce
+		5b nasluchujesz na wiadomosc o koncu spotkania
+		6 odczekaj przed kolejnym spotkaniem
+
+	
+OBSLUGA ZASOBU:
+	1 nasluchuj na prosby o zasob
+	2 jesli dostaniesz prosbe to dodaj nadawce do swojej kolejki(FIFO) do zasobu
+	JESLI nie masz zasobu:
+		3 przeslij prosbe dalej w kierunku zasobu
+
+	JESLI masz zasob:
+		3 sprawdz pierwszy proces w kolejce i wyslij mu zasob(usun z kolejki)
+		4 oznacz nowy kierunek zasobu
+		
+	ROWNOCZESNIE:
+		1 odbieraj zasoby(nasluchuj)
+		2 sprawdz pierwszy proces w kolejce i wyslij mu zasob(usun z kolejki)
+		3 oznacz nowy kierunek zasobu
+	
+	
+AKCEPTOR:
+	1 nasluchuj na prosby o zgode
+	2 jesli dostaniesz prosbe to dodaj nadawce do swojej kolejki(FIFO) do zgody
+	
+	JESLI jestes AKCEPTOREM:
+		3 sprawdz pierwszy proces w kolejce i wyslij mu zgode(usun z kolejki)
+	JESLI nie jestes AKCEPTOREM:
+		3 przeslij prosbe dalej do rodzica
+	
+	ROWNOCZESNIE:
+		1 odbieraj zgody (nasluchuj)
+		2 sprawdz pierwszy proces w kolejce i wyslij mu zgode(usun z kolejki)
+		
