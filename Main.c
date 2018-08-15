@@ -20,6 +20,7 @@
 #define RESOURCE_REQUEST_TAG 107
 #define RESOURCE_ASSIGN_TAG 108
 #define BERSERK_TAG 666
+#define KONOPNICKA_TAG 777
 
 pthread_mutex_t resourceMutex;
 pthread_mutex_t waitForResourceMutex;
@@ -65,7 +66,7 @@ void* resourceTransferListener(void* t) { //nasluchiwanie na przekazywanie zasob
 	pthread_exit(NULL);
 }
 
-void* meetingAcceptaneListener(void* t) { //nasluchiwanie na akceptacje spotkania
+void* meetingAcceptaneListener(void* t) { //nasluchiwanie na potwierdzenie spotkania
 	MPI_Status status;
 	Conspirator* myConspirator = currentConspiratorState -> conspiratorData;
 	int acceptanceCount = 0;
@@ -106,7 +107,7 @@ void* resourceAssignListener(void* t) { //nasluchiwanie na przypisanie zasobu
 			sprintf(buff, "[%d] Konspirator[%d] otrzymal zasob\n", lamportTime, currentConspiratorState->conspiratorData->id);
 			printStatus(buff);
 		} else {
-			sprintf(buff, "[%d] Konspirator[%d] otrzymal zasob od Konspiratora[%d] and pass it to process[%d]\n", lamportTime, currentConspiratorState->conspiratorData->id, status.MPI_SOURCE, firstInQueue);
+			sprintf(buff, "[%d] Konspirator[%d] otrzymal zasob od Konspiratora[%d] i przekazuje Konspiratorowi[%d]\n", lamportTime, currentConspiratorState->conspiratorData->id, status.MPI_SOURCE, firstInQueue);
 			printStatus(buff);
    		//MPI_Send(&number, 1, MPI_INT, firstInQueue, RESOURCE_ASSIGN_TAG, MPI_COMM_WORLD);
 			++lamportTime;
@@ -117,7 +118,7 @@ void* resourceAssignListener(void* t) { //nasluchiwanie na przypisanie zasobu
 			currentConspiratorState->resourceOwner = firstInQueue;
 			currentConspiratorState->sendResourceRequest = 0;
 			if(isQueueEmpty(currentConspiratorState->resourceRequestFifo) == 0){
-				sprintf(buff, "[RESOURE_REQUEST][%d] Process[%d] i przekazuje go Konspiratorowi[%d]\n", lamportTime, currentConspiratorState->conspiratorData->id, currentConspiratorState->resourceOwner);
+				sprintf(buff, "[%d] Konspirator[%d] przekazuje zadanie zasobu Konspiratorowi[%d]\n", lamportTime, currentConspiratorState->conspiratorData->id, currentConspiratorState->resourceOwner);
 				printStatus(buff);
    			//MPI_Send(&number, 1, MPI_INT, currentConspiratorState->resourceOwner, RESOURCE_REQUEST_TAG, MPI_COMM_WORLD);
 				++lamportTime;
