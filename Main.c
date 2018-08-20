@@ -203,7 +203,7 @@ void requestForResource() { //zadanie zasobu
 		//printf("Process[%d] after put\n", currentConspiratorState->conspiratorData->id);
 		//printQueue(currentConspiratorState->resourceRequestFifo);
 		if(currentConspiratorState->sendResourceRequest == 0) {
-			sprintf(buff, "[RESOURCE_REQUEST][%d] process[%d] ask process[%d] for resource\n", lamportTime, currentConspiratorState->conspiratorData->id, currentConspiratorState->resourceOwner);
+			sprintf(buff, "[%d] Konspirator[%d] prosi Konspiratora[%d] o zasob\n", lamportTime, currentConspiratorState->conspiratorData->id, currentConspiratorState->resourceOwner);
 			printStatus(buff);
 			int number = 1;
 			//MPI_Send(&number, 1, MPI_INT, currentConspiratorState->resourceOwner, RESOURCE_REQUEST_TAG, MPI_COMM_WORLD);
